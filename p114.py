@@ -26,3 +26,7 @@ if char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u' :
 else :
     print('%s은(는) 자음이다.'%char)
 
+
+
+# 관리가 되려나
+print('재밋네 후후') 
