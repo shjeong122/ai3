@@ -13,5 +13,3 @@ print(x%2 == 0) and print(x%6 == 0)
 print(x%2 == 0) or print(x%6 == 0)
 print(not(x != 10))
 
-# git 관리할것
-print('aaa')
