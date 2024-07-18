@@ -42,9 +42,9 @@ for i in range(0,9) :
 print('10! = %d'%fac)
 '''
 # E4-7 6번 문제 동일 결과, while문 사용
-i=0
+i=1
 fac=1
-while 1<=i<=10 :
-    i += 1
-    fac=fac*(i+1)
+while i<11 :
+    fac=fac*i
+    i = i + 1
 print('10! = %d'%fac)
