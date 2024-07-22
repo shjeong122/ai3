@@ -73,5 +73,8 @@ def p(x) :
     list1 = [a,b,cnt]
     return list1
 
+    dd
+    
+
 print(p(5))
 '''      

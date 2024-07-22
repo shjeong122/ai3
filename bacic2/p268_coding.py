@@ -24,6 +24,7 @@ intSum(20,50)
 intSum(600,800)
 '''
 # C7-3 매개변수 *args 활용
+# 반환
 
 def member_join(*args) :
     result=""
