@@ -15,7 +15,10 @@ print()
 print(list2[6:9])
 print(list2[1: :2])
 print(list2[-1: :-2])
-'''
+
+
+index=nameList.index(a)
+
 # 응용문제
 # 100~200까지, 10씩 증가하는 리스트 만들기
 
@@ -34,3 +37,4 @@ print('list3의 합계는 %d 입니다.'%sum)
 
 print(len(list3))
 print('list의 개수는', len(list3),'개 입니다.')
+'''
