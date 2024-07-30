@@ -41,15 +41,11 @@ def listUp() :
         print() 
     
 nameL = []
-priceL = []
-howManyL = []
-whereL = []
-paywithL = []
-percentL = []
-sellPriceL = []
-list1=[]
 
+list1=[]
 indexRe = 0
+
+print("로그아웃 상태입니다.")
 menu = '1'
 while menu != '5' :
     menu = menuL()
@@ -63,7 +59,7 @@ while menu != '5' :
             print('-'*30)
 
             while menu != '5' :
-                print('로그아웃!')
+
                 menu = menuL()
                 # 1 : 입력 
                 if menu == '1' :   
@@ -80,12 +76,7 @@ while menu != '5' :
                     sellPrice = price*(100-percent)/100
 
                     nameL.append(name)
-                    priceL.append(price)
-                    howManyL.append(howMany)
-                    whereL.append(where)
-                    paywithL.append(paywith)
-                    percentL.append(percent)
-                    sellPriceL.append(sellPrice)
+     
                     list1.append([name,price,percent,howMany,sellPrice,where,paywith])
 
                     print('도서명 정가 할인율 주문수량 판매금액 판매처 구입방법  ')
@@ -98,24 +89,50 @@ while menu != '5' :
                       #indexRe
                     menu2 = '1' 
                     while menu2 != '6':
-                        menu2 = input('수정할 항목을 입력하세요(2.정가, 6.나가기) : ')   #1.도서명, 2. 정가, 3.주문수량, 4. 판매처, 5. 구입방법
-                        
-                        if menu2== '2' :
+                        menu2 = input('수정할 항목을 입력하세요(1.도서명, 2. 정가, 3.주문수량, 4. 판매처, 5. 구입방법, 6.나가기) : ')   #1.도서명, 2. 정가, 3.주문수량, 4. 판매처, 5. 구입방법
+
+                        if menu2 == '1' :
+                            indexRe = int(index())
+                            nameRe=input('새로운 도서명을 입력하세요 : ')
+
+                            nameL[indexRe] = nameRe
+                            list1[indexRe][0] = nameRe
+
+                            break
+                       
+                        elif menu2 == '2' :
                             indexRe = int(index())
                             
-                            priceRe=int(input('수정할 정가를 입력하세요 : '))
+                            priceRe=int(input('새로운 정가를 입력하세요 : '))
                            
                             percent = calc()                
                             sellPrice = priceRe*(100-percent)/100
 
-                            priceL[indexRe] = priceRe
-                            percentL[indexRe] = percent
-                            sellPriceL[indexRe]=sellPrice
                             list1[indexRe][1] = priceRe
                             list1[indexRe][4] = sellPrice
+                            
 
+                        elif menu2 == '3' :
+                            indexRe = int(index())
+                            howManyRe=input('새로운 주문 수량을 입력하세요 : ')
+                            list1[indexRe][3] = howManyRe
+                            
+
+                        elif menu2 == '4' :
+                            indexRe = int(index())
+                            whereRe=input('새로운 판매처를 입력하세요 : ')
+                            list1[indexRe][5] = whereRe
+                            
+
+                        elif menu2 == '5' :
+                            indexRe = int(index())
+                            paywithRe=input('새로운 구입방법을 입력하세요 : ')
+                            list1[indexRe][6] = paywithRe
+                                           
                             print('도서명 정가 할인율 주문수량 판매금액 판매처 구입방법  ')
                             listUp()
+                          
+                        
 
                 elif menu == '3' :
                     print('-'*30)
@@ -131,23 +148,11 @@ while menu != '5' :
                     print('도서명 정가 할인율 주문수량 판매금액 판매처 구입방법  ')
                     listUp()
 
+                elif menu == "5" :
+                    print('종료되었습니다.')
 
     else :
         print('-'*30)
         print('다시 입력해 주세요')
         print('-'*30)
 
-'''      
-                if menu == '3'  :
-                    print('-'*30)
-                    delInput=input('삭제할 도서명을 입력하세요 : ')
-                    print('-'*30)
-'''
-
-
-
-  
-   
-
-
-# 의논하여 요구사항을 구상해 보세요

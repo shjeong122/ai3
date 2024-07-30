@@ -41,15 +41,11 @@ def listUp() :
         print() 
     
 nameL = []
-priceL = []
-howManyL = []
-whereL = []
-paywithL = []
-percentL = []
-sellPriceL = []
-list1=[]
 
+list1=[]
 indexRe = 0
+
+print("로그아웃 상태입니다.")
 menu = '1'
 while menu != '5' :
     menu = menuL()
@@ -63,7 +59,7 @@ while menu != '5' :
             print('-'*30)
 
             while menu != '5' :
-                print('로그아웃!')
+
                 menu = menuL()
                 # 1 : 입력 
                 if menu == '1' :   
@@ -80,12 +76,7 @@ while menu != '5' :
                     sellPrice = price*(100-percent)/100
 
                     nameL.append(name)
-                    priceL.append(price)
-                    howManyL.append(howMany)
-                    whereL.append(where)
-                    paywithL.append(paywith)
-                    percentL.append(percent)
-                    sellPriceL.append(sellPrice)
+     
                     list1.append([name,price,percent,howMany,sellPrice,where,paywith])
 
                     print('도서명 정가 할인율 주문수량 판매금액 판매처 구입방법  ')
@@ -108,9 +99,6 @@ while menu != '5' :
                             percent = calc()                
                             sellPrice = priceRe*(100-percent)/100
 
-                            priceL[indexRe] = priceRe
-                            percentL[indexRe] = percent
-                            sellPriceL[indexRe]=sellPrice
                             list1[indexRe][1] = priceRe
                             list1[indexRe][4] = sellPrice
 
