@@ -48,8 +48,8 @@ paywithL = []
 percentL = []
 sellPriceL = []
 list1=[]
-
 indexRe = 0
+
 menu = '1'
 while menu != '5' :
     menu = menuL()
@@ -64,6 +64,7 @@ while menu != '5' :
 
             while menu != '5' :
                 print('로그아웃!')
+
                 menu = menuL()
                 # 1 : 입력 
                 if menu == '1' :   
