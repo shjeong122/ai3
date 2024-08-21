@@ -1,0 +1,10 @@
+package P343;
+
+public class Printer implements RemoteControl {
+	@Override
+	public void turnOn() {
+		// TODO Auto-generated method stub
+	System.out.println("프린터를 켭니다.");	
+	}
+
+}

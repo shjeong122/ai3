@@ -1,0 +1,20 @@
+package P317;
+
+public class CarEx {
+
+	public static void main(String[] args) {
+
+		Car mycar = new Car();
+		
+		mycar.tire = new Tire();
+		mycar.tire = new HankookTire();
+		myCar.run();
+		
+		myCar.tire = new HankookTire();
+		muCar.run();
+		myCar.tire = new kumhootire();
+		myCar.run();
+
+	}
+
+}

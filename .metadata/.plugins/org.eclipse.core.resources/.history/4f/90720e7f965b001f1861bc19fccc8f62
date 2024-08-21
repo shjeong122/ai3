@@ -1,0 +1,5 @@
+package P482;
+
+public class DepositException {
+
+}

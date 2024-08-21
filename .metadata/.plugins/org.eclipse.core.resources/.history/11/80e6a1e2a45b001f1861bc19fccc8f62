@@ -1,0 +1,32 @@
+package P488;
+
+public class LoginEx {
+
+	public static void main(String[] args) {
+		try {
+			login("White", "12345");
+		} catch(Exception e) {
+			System.out.println(e.getMessage() + "1");
+			System.out.println(e.getLocalizedMessage() + "2");
+		}
+		try {
+			login("blue", "54321");	
+		} catch(Exception e) {
+			System.out.println(e.getMessage()+"11");
+			System.out.println(e.getLocalizedMessage()+"22");
+		}
+		
+	}
+
+	private static void login(String id, String password) throws NotExistIdException, WrongPasswordException {
+		if( !id.equals("blue")) {
+			//예외 발생
+			throw new NotExistIdException("아이디가 존재하지 않습니다.");
+		}
+		if( !password.equals("54321")) {
+			//예외 발생
+			throw new NotExistIdException("패스워드가 틀립니다.");
+	}
+
+}
+}

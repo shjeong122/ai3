@@ -1,0 +1,5 @@
+module my_module_a {
+	export pack1;
+	export pack2;
+	
+}

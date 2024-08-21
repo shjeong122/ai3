@@ -1,0 +1,5 @@
+package P387;
+
+public interface InterfaceA {
+
+}

@@ -1,0 +1,21 @@
+package ch07_07;
+
+import ch07_02.Professor;
+import ch07_02.Researcher;
+import ch07_02.Student;
+import ch07_02.StudentWorker;
+
+public class PersonEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Student st = new Student();
+		StudentWorker stw = new StudentWorker();
+		Researcher rsc = new Researcher();
+		Professor prf = new Professor();
+		st.eat();
+	
+	}
+
+}

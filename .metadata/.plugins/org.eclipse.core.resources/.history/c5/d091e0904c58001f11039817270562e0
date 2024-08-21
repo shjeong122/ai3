@@ -1,0 +1,10 @@
+package ch07_02;
+
+public class Person {
+	protected void sleep() {
+		System.out.println("잔다");
+	}
+	protected void eat() {
+		System.out.println("먹는다");
+	}
+}

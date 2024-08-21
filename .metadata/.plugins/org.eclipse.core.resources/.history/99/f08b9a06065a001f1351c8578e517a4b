@@ -1,0 +1,12 @@
+package P419;
+
+public class AnonymousEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Anonymous anony = new Anonymous();
+		anony.field.run();
+		
+	}
+
+}

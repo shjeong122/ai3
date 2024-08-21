@@ -1,0 +1,21 @@
+package P400;
+
+import java.awt.image.SampleModel;
+
+public class AEx {
+
+	public static void main(String[] args) {
+		A.sa = true;  //static
+		A.saM();
+		
+		
+		A a = new A(); //외부 클래스 인스턴스
+		a.a = 3.5;
+		a.aaM();
+		a.aM();
+		
+		A.B b = new A.B(); //A객체화 없이 사용 가능
+		
+	}
+
+}

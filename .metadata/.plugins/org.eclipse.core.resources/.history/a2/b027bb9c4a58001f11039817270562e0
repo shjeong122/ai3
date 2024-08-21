@@ -1,0 +1,11 @@
+package ch07_02;
+
+public class Student extends Person {
+	public Student() {
+		void study() {
+			System.out.println("공부한다");
+		}
+		
+	}
+	
+}

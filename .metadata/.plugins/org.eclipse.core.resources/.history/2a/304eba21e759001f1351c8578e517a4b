@@ -1,0 +1,20 @@
+package P404;
+
+public class A {
+	String name;
+	int a() {return 0;};
+	static String sname;
+	static double sa() {return 0.0;};
+	
+	void m() {  //메소드 안에 클래스 생성
+		class B {
+			String b;
+			int bM() { return 0;};
+			static String sb;
+			static double ab() {return 0.0;};
+			
+			
+		}
+	}
+	
+}

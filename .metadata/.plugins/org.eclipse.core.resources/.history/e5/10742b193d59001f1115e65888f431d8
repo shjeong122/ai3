@@ -1,0 +1,13 @@
+package P343;
+
+public interface RemoteControl { //인터페이스에서는 추상메소드가 기본
+	public static final int MAX_VOLUME = 10; //상수 선언
+	 int MIN_VOLUME = 0; // 생략 가능
+	 
+	public void turnOn();
+	void turnOff(); //추상메소드 추가 시 오버라이드 역시 추가해야
+	void setVolume(int volume);
+	//int a; //변수 선언은 불가 
+	int a = 100; //상수 선언
+	
+}

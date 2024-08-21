@@ -1,0 +1,16 @@
+package P400;
+
+public class A {
+	double a = 1.2;  //인스턴스 변수
+	void aM() {};    //인스턴스 메소드
+	static boolean sa = true;   //정적 변수
+	static void saM() {};    //정적 메소드
+	
+	static class B {
+		double b = 2.3;
+		void bM() {} ;
+		static boolean sb = true;
+		static void sbM() {} ;
+		
+	}
+}

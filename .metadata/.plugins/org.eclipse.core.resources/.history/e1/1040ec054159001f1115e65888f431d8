@@ -1,0 +1,6 @@
+package P367;
+
+public class InterfaceImpl implements Interface {
+	
+
+}

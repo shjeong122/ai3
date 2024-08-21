@@ -1,0 +1,26 @@
+package ch07_02;
+
+public class ColorPoint extends Point {
+
+	String color;
+	
+	void colorPoint() {
+		System.out.print("colorPoint : " + getColor() + "("+p.x +","+p.y+")");
+	}
+
+	public ColorPoint() {
+		super();
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	Point p = new Point();
+	
+
+}

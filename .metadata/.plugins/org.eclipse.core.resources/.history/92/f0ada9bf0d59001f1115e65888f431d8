@@ -1,0 +1,12 @@
+package P323;
+
+public class InstanceofEx {
+	// main() 메소드에서 바로 호출하기 위해 정적 메소드 선언
+	public static void main(String[] args) {
+		System.out.println("name : " + person.name);
+		person.walk();
+		
+
+	}
+
+}

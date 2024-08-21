@@ -1,0 +1,17 @@
+package p468;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		double a = 10.5/0;
+		System.out.println(a);
+		
+		int[] iA = new int[10];
+		for(int i=0; i<iA.length; i++) {
+			iA[i] = 10+i;
+			System.out.println(iA[i]);
+		}
+		
+	}
+
+}

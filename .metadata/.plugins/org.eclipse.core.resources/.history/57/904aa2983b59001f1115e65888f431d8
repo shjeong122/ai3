@@ -1,0 +1,8 @@
+package P343;
+
+public interface RemoteControl { //인터페이스에서는 추상메소드가 기본
+	public static final int MAX_VOLUME = 10; //상수선언,
+	 int MIN_VOLUME = 0; // 생략 가능
+	public void turnOn();
+	
+}

@@ -1,0 +1,12 @@
+package P419;
+
+public class ActionEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Action action = new Action();
+			
+		action.work();
+	}
+
+}

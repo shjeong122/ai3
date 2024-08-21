@@ -1,0 +1,14 @@
+package P482;
+
+public class AccountMain {
+
+	public static void main(String[] args) {
+		Account account = new Account();
+		account.deposit(10000); //예금
+		System.out.println("예금액 : " + account.getBalance());
+		
+		account.wihthdraw(5000);
+
+	}
+
+}

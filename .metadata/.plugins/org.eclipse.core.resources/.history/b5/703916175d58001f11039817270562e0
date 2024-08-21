@@ -1,0 +1,14 @@
+package ch07_02;
+
+public class PointBusiness {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Point p = new Point();
+		ColorPoint cp = new ColorPoint();
+		
+		System.out.println(cp.getColor() + "(" + p.getX() + ", " + p.getY() + ")");
+		
+	}
+
+}

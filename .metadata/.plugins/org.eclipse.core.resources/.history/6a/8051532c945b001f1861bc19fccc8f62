@@ -1,0 +1,9 @@
+package P482;
+
+public class InsufficientEx extends Exception{
+	public InsufficientEx() {}
+	public InsufficientEx(String message) {
+		super(message);
+	}
+
+}

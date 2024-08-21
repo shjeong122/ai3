@@ -1,0 +1,9 @@
+package ch07_02;
+
+import ch07_07.B;
+
+public class A extends B{
+	int sub(int n) {
+		int result = hap(n);
+	}
+}

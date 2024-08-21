@@ -1,0 +1,6 @@
+package P420;
+
+public class OracleDB {
+	OracleDB oracleDB = new OracleDB() ;
+	
+}

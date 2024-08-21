@@ -1,0 +1,10 @@
+package ch07_01;
+
+public class PPP extends PP {
+	public PPP() {
+		super();
+		System.out.println("PPP 생성자");
+	
+	}
+
+}

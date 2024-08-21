@@ -1,0 +1,13 @@
+package P419;
+
+public class HomeEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Home home = new Home();
+		
+		home.use1();
+		home.use2();
+	}
+
+}

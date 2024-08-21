@@ -1,0 +1,10 @@
+package P420;
+
+public class DB {
+	DB database = new DB();
+	
+	public void rundao () {
+		System.out.println("일반 DB");
+	}
+	
+}

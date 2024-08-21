@@ -1,0 +1,21 @@
+package ch07_05.pa1;
+
+import ch07_05.A;
+
+public class D extends A {
+	public D() {
+		super();
+	}
+		public void methond1() {
+			this.field = "value";
+			this.method();
+			this.field = "v111";
+			this.method();
+		}
+		public void method2() {
+//			A a=new A();
+//			a.field = "value";
+//			a.method();
+		
+	}
+}

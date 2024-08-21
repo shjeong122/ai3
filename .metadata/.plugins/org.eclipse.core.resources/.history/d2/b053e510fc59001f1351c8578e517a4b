@@ -1,0 +1,14 @@
+package P415;
+
+public class Car {
+	
+	private Tire tire = new Tire();  //Car에서만 접근 가능
+	
+	private Tire tire2 = new Tire() { //부모생성자 생성
+		
+		@Override
+		public void roll() {
+			System.out.println("한국 타이어가 굴러갑니다.");
+		};
+	};
+}

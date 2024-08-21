@@ -1,0 +1,30 @@
+package P335;
+
+public class check1_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AA aa = new AA();
+		A aa;
+		a1 = aa; // 큰타입 부모 = 작은타입 자식(자동형변환 up casting)
+		A a2 = new A();
+		aa = (AA) a2;
+		aa = (AA) a1;
+		
+	
+	}	
+
+}
+
+class A{
+	String name;
+	private void a() {} ;
+	
+}
+class AA extends A{
+	void aa() {
+		name = "김수연";
+		a();
+		
+	}
+}

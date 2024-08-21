@@ -1,0 +1,13 @@
+package P420;
+
+public class MySQL {
+
+	
+	void mySqlrun() {
+		DB db = new DB() {
+		public void rundao() {
+			System.out.println("오라클DB");
+		}
+		};
+	}
+}

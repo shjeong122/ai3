@@ -1,0 +1,13 @@
+package ch07_01;
+
+import ch07_02.Person;
+
+public class PPP extends Person {
+	public PPP() {
+		super();
+		
+		System.out.println("PPP 생성자");
+	
+	}
+
+}

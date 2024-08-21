@@ -1,0 +1,11 @@
+package P486;
+
+public class P5 {
+	public static void main(String[] args) {
+		try {method1();} catch(Exception e) {}
+		
+	}
+	public static void method1() throws NumberFormatException, ClassCastException {
+		
+	}
+}

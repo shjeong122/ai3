@@ -1,0 +1,5 @@
+package P488;
+
+public class NotExistIdException {
+
+}

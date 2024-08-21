@@ -1,0 +1,5 @@
+package P343;
+
+public interface A implements II{ //구현
+
+}

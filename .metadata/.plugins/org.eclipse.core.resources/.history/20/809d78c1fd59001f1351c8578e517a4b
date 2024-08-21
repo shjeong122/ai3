@@ -1,0 +1,12 @@
+package P415;
+
+public class CarEx {
+
+	public static void main(String[] args) {
+		Car car = new Car();
+		car.run1();
+		car.run2();
+
+	}
+
+}

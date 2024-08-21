@@ -1,0 +1,16 @@
+package P343;
+
+public class RemoteControlEx {
+
+	public static void main(String[] args) {
+		RemoteControl rc;
+		rc = new Television();
+		
+		//인터페이스=>turnOn(Television)
+		
+		rc = new Audio();
+		rc.turnOn();
+		
+	}
+
+}

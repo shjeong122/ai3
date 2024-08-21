@@ -1,0 +1,10 @@
+package P420;
+
+public class OracleDB {
+	
+	DB db = new DB();
+	
+	public void rundao() {
+		System.out.println("오라클DB");
+	}
+}

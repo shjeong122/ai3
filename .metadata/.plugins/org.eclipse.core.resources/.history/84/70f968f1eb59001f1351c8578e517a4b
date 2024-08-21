@@ -1,0 +1,13 @@
+package P411;
+
+public class A {
+	String name;
+	int a() {return 0;};
+	static String sname;
+	static double sa() {return 0.0;};
+	
+	interface B {
+		void onClick();
+		
+	}
+}

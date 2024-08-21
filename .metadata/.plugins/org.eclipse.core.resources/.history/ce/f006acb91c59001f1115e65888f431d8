@@ -1,0 +1,25 @@
+package P335;
+
+public class check1_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AA aa = new AA();
+		A a;
+		a = aa;
+	}
+
+}
+
+class A{
+	private String name;
+	private void a() {} ;
+	
+}
+class AA extends A{
+	void aa() {
+		name = "김수연";
+		a();
+		
+	}
+}

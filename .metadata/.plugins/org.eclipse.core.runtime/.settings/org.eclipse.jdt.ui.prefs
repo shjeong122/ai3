@@ -1,0 +1,15 @@
+breadcrumb.org.eclipse.jdt.ui.JavaPerspective=true
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaChainProposalCategory\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="ch0601.Car"><rhs name\="ch0601.Car"/></lhs><lhs name\="ch07_03.Calculator"><rhs name\="ch07_03.Calculator"/><rhs name\="ch07_03.Computer"/></lhs><lhs name\="ch07_03.Computer"><rhs name\="ch07_03.Computer"/></lhs><lhs name\="ch07_02.Person"><rhs name\="ch07_02.Student"/><rhs name\="ch07_02.StudentWorker"/><rhs name\="ch07_02.Researcher"/><rhs name\="ch07_02.Professor"/></lhs><lhs name\="ch07_02.Student"><rhs name\="ch07_02.Student"/><rhs name\="ch07_02.StudentWorker"/></lhs><lhs name\="ch07_02.StudentWorker"><rhs name\="ch07_02.StudentWorker"/></lhs><lhs name\="ch07_02.Researcher"><rhs name\="ch07_02.Researcher"/><rhs name\="ch07_02.Professor"/></lhs><lhs name\="ch07_02.Professor"><rhs name\="ch07_02.Professor"/></lhs><lhs name\="ch07_02.Point"><rhs name\="ch07_02.ColorPoint"/></lhs><lhs name\="ch07_02.ColorPoint"><rhs name\="ch07_02.ColorPoint"/></lhs><lhs name\="P320.Driver"><rhs name\="P320.Driver"/></lhs><lhs name\="P317R.Tire"><rhs name\="P317R.HankookTire"/><rhs name\="P317R.kumhoTire"/></lhs><lhs name\="P343.RemoteControl"><rhs name\="P343.SmartPhone"/><rhs name\="P343.Printer"/></lhs><lhs name\="P378.Tire"><rhs name\="P378.HankookTire"/><rhs name\="P378.KumhoTire"/><rhs name\="P378.Michelin"/><rhs name\="P378.MichelinTire"/></lhs><lhs name\="P419.Anonymous"><rhs name\="P419.Anonymous"/></lhs><lhs name\="P424.Car$Engine"><rhs name\="P424.Car$Engine"/></lhs><lhs name\="java.lang.Exception"><rhs name\="P482.InsufficientEx"/><rhs name\="P482.DepositException"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="P482.InsufficientEx"/><rhs name\="P482.DepositException"/></lhs><lhs name\="P482.InsufficientEx"><rhs name\="P482.InsufficientEx"/></lhs><lhs name\="P482.DepositException"><rhs name\="P482.DepositException"/></lhs></history>
+content_assist_number_of_computers=20
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+markOccurrences=false
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=23
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

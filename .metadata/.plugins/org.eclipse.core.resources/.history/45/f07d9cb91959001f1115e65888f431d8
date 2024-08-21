@@ -1,0 +1,5 @@
+package P333;
+
+public sealed class Person permits Employee, Manager {
+
+}

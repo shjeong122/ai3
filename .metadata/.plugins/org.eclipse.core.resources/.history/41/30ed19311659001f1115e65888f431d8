@@ -1,0 +1,5 @@
+package P327;
+
+public abstract class AAA extends A {
+	abstract void aaa1();
+}

@@ -1,0 +1,7 @@
+package P343;
+
+public interface Television implements RemoteControl {
+	@Override
+	public void turnOn() {}
+
+}

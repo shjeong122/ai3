@@ -1,0 +1,11 @@
+package P343;
+
+public interface RemoteControl { //인터페이스에서는 추상메소드가 기본
+	public static final double PI = 3.14;
+			//상수 static final 자료형 
+	public static final int count = 12;
+	//추상메소드
+	/*abstract*/ void m1() {};
+	void m2() ;
+	
+}

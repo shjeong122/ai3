@@ -1,0 +1,11 @@
+package ch07_02;
+
+public class PointBusiness {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	}
+
+}

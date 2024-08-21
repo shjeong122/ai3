@@ -1,0 +1,12 @@
+package P420;
+
+public class DBEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DB db = new DB() ;
+		db.database.rundao();
+		
+	}
+
+}

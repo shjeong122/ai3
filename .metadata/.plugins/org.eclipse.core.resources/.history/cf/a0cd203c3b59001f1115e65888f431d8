@@ -1,0 +1,7 @@
+package P343;
+
+public interface RemoteControl { //인터페이스에서는 추상메소드가 기본
+	
+	public void turnOn();
+	
+}

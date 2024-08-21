@@ -1,0 +1,11 @@
+package ch07_02;
+
+public class A {
+	
+	int hap(int n) {
+		for(int i=1; i<=n; i++) {
+			sum += i
+		}
+	}
+	
+}

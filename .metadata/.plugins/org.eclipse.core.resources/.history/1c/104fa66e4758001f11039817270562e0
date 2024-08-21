@@ -1,0 +1,11 @@
+package ch07_01;
+
+public class PEx {
+
+	public static void main(String[] args) {
+		// P개체생성
+		P p = new P();
+		
+	}
+
+}

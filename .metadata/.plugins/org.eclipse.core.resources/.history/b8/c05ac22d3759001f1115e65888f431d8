@@ -1,0 +1,12 @@
+package P343;
+
+public class Television implements RemoteControl {
+
+	@Override
+	public void turnOn() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

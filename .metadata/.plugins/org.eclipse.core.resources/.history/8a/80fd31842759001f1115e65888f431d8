@@ -1,0 +1,18 @@
+package P339;
+
+public class Ex {
+	public static void action(A a) {
+		a.method1();
+		if() {
+			c.method2();
+		}
+	}
+
+	public static void main(String[] args) {
+		action(new A()); // A a = new A()
+		action(new B()); // A a = new B()
+		action(new C()); // A a = new C()
+
+	}
+
+}

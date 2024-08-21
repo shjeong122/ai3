@@ -1,0 +1,10 @@
+package P411;
+
+public class ButtonEx {
+
+	public static void main(String[] args) {
+		Button button = new Button();
+		class OkListener 
+		
+	}
+}

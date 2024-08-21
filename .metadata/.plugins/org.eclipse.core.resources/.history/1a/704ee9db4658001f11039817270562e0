@@ -1,0 +1,6 @@
+package ch07_01;
+
+public class P {
+	String name;
+	public P()
+}

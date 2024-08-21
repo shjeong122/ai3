@@ -1,0 +1,8 @@
+package ch07_01;
+
+public class PP extends P{
+	public PP() {
+		System.out.println("PP의 생성자");		
+	}
+
+}

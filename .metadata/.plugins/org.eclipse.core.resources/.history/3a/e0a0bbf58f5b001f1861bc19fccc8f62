@@ -1,0 +1,29 @@
+package p479;
+
+import java.util.Scanner;
+
+public class Ex03 {
+	public static void main(String[] args) {
+		Ex03 ex03 = new Ex03();
+		ex03.m1();
+		
+	}
+	void m1() throws NumberFormatException {
+		m2();
+	}
+	void m2() throws NumberFormatException{
+		m3();
+		
+		double [] dA = new double[3];
+		dA[3] = 2.5;
+	}
+	void m3() throws NumberFormatException{
+		//예외 발생
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자를 입력하세요>> ");
+		String nn = sc.next();
+		int n = Integer.parseInt(nn);
+		System.out.println( n + 100);
+		
+	}
+}

@@ -1,0 +1,13 @@
+package P335;
+
+public class Parent1 {
+	public String name;
+	
+	public Parent1(String name) {
+		this.name = name;
+	}
+public Parent1() {
+	// TODO Auto-generated constructor stub
+}
+
+}
