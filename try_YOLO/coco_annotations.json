@@ -1,0 +1,114 @@
+{
+    "info": {
+        "description": "COCO-style dataset for people detection",
+        "version": "1.0",
+        "year": 2025
+    },
+    "images": [
+        {
+            "id": 220,
+            "width": 640,
+            "height": 480,
+            "file_name": "webcam_frame.jpg"
+        }
+    ],
+    "annotations": [
+        {
+            "id": 0,
+            "image_id": 220,
+            "category_id": 1,
+            "bbox": [
+                291,
+                424,
+                20,
+                20
+            ],
+            "area": 400,
+            "iscrowd": 0
+        },
+        {
+            "id": 1,
+            "image_id": 220,
+            "category_id": 1,
+            "bbox": [
+                449,
+                330,
+                20,
+                20
+            ],
+            "area": 400,
+            "iscrowd": 0
+        },
+        {
+            "id": 2,
+            "image_id": 220,
+            "category_id": 1,
+            "bbox": [
+                572,
+                322,
+                20,
+                20
+            ],
+            "area": 400,
+            "iscrowd": 0
+        },
+        {
+            "id": 3,
+            "image_id": 220,
+            "category_id": 1,
+            "bbox": [
+                204,
+                434,
+                20,
+                20
+            ],
+            "area": 400,
+            "iscrowd": 0
+        },
+        {
+            "id": 4,
+            "image_id": 220,
+            "category_id": 1,
+            "bbox": [
+                402,
+                332,
+                20,
+                20
+            ],
+            "area": 400,
+            "iscrowd": 0
+        },
+        {
+            "id": 5,
+            "image_id": 220,
+            "category_id": 1,
+            "bbox": [
+                248,
+                313,
+                20,
+                20
+            ],
+            "area": 400,
+            "iscrowd": 0
+        },
+        {
+            "id": 6,
+            "image_id": 220,
+            "category_id": 1,
+            "bbox": [
+                373,
+                330,
+                20,
+                20
+            ],
+            "area": 400,
+            "iscrowd": 0
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "person"
+        }
+    ]
+}
