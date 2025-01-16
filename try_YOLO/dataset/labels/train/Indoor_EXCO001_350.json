@@ -1,0 +1,1051 @@
+﻿{
+  "folder": "CCTV",
+  "videoname": "EXCO001",
+  "size": {
+    "width": 1920,
+    "height": 1080
+  },
+  "header": {
+    "type": 1
+  },
+  "image": {
+    "imagename": "Indoor_EXCO001_350.jpg",
+    "crowdinfo": {
+      "counting": 171,
+      "collectiveness": 1,
+      "stability": 2,
+      "uniformity": 1,
+      "objects": [
+        {
+          "directionindex": [
+            903.0,
+            124.0
+          ]
+        },
+        {
+          "directionindex": [
+            927.0,
+            133.0
+          ]
+        },
+        {
+          "directionindex": [
+            950.0,
+            133.0
+          ]
+        },
+        {
+          "directionindex": [
+            903.0,
+            141.0
+          ]
+        },
+        {
+          "directionindex": [
+            872.0,
+            145.0
+          ]
+        },
+        {
+          "directionindex": [
+            887.0,
+            149.0
+          ]
+        },
+        {
+          "directionindex": [
+            886.0,
+            167.0
+          ]
+        },
+        {
+          "directionindex": [
+            861.0,
+            172.0
+          ]
+        },
+        {
+          "directionindex": [
+            919.0,
+            173.0
+          ]
+        },
+        {
+          "directionindex": [
+            861.0,
+            180.0
+          ]
+        },
+        {
+          "directionindex": [
+            934.0,
+            182.0
+          ]
+        },
+        {
+          "directionindex": [
+            828.0,
+            188.0
+          ]
+        },
+        {
+          "directionindex": [
+            899.0,
+            188.0
+          ]
+        },
+        {
+          "directionindex": [
+            911.0,
+            189.0
+          ]
+        },
+        {
+          "directionindex": [
+            928.0,
+            199.0
+          ]
+        },
+        {
+          "directionindex": [
+            958.0,
+            198.0
+          ]
+        },
+        {
+          "directionindex": [
+            892.0,
+            215.0
+          ]
+        },
+        {
+          "directionindex": [
+            841.0,
+            267.0
+          ]
+        },
+        {
+          "directionindex": [
+            901.0,
+            272.0
+          ]
+        },
+        {
+          "directionindex": [
+            980.0,
+            273.0
+          ]
+        },
+        {
+          "directionindex": [
+            869.0,
+            288.0
+          ]
+        },
+        {
+          "directionindex": [
+            950.0,
+            298.0
+          ]
+        },
+        {
+          "directionindex": [
+            1047.0,
+            308.0
+          ]
+        },
+        {
+          "directionindex": [
+            1335.0,
+            311.0
+          ]
+        },
+        {
+          "directionindex": [
+            889.0,
+            317.0
+          ]
+        },
+        {
+          "directionindex": [
+            911.0,
+            320.0
+          ]
+        },
+        {
+          "directionindex": [
+            972.0,
+            314.0
+          ]
+        },
+        {
+          "directionindex": [
+            841.0,
+            325.0
+          ]
+        },
+        {
+          "directionindex": [
+            958.0,
+            325.0
+          ]
+        },
+        {
+          "directionindex": [
+            989.0,
+            328.0
+          ]
+        },
+        {
+          "directionindex": [
+            1047.0,
+            333.0
+          ]
+        },
+        {
+          "directionindex": [
+            807.0,
+            339.0
+          ]
+        },
+        {
+          "directionindex": [
+            885.0,
+            342.0
+          ]
+        },
+        {
+          "directionindex": [
+            973.0,
+            344.0
+          ]
+        },
+        {
+          "directionindex": [
+            1357.0,
+            338.0
+          ]
+        },
+        {
+          "directionindex": [
+            890.0,
+            349.0
+          ]
+        },
+        {
+          "directionindex": [
+            904.0,
+            349.0
+          ]
+        },
+        {
+          "directionindex": [
+            943.0,
+            352.0
+          ]
+        },
+        {
+          "directionindex": [
+            829.0,
+            358.0
+          ]
+        },
+        {
+          "directionindex": [
+            910.0,
+            358.0
+          ]
+        },
+        {
+          "directionindex": [
+            981.0,
+            358.0
+          ]
+        },
+        {
+          "directionindex": [
+            847.0,
+            365.0
+          ]
+        },
+        {
+          "directionindex": [
+            861.0,
+            366.0
+          ]
+        },
+        {
+          "directionindex": [
+            1006.0,
+            366.0
+          ]
+        },
+        {
+          "directionindex": [
+            829.0,
+            375.0
+          ]
+        },
+        {
+          "directionindex": [
+            777.0,
+            383.0
+          ]
+        },
+        {
+          "directionindex": [
+            790.0,
+            381.0
+          ]
+        },
+        {
+          "directionindex": [
+            861.0,
+            382.0
+          ]
+        },
+        {
+          "directionindex": [
+            900.0,
+            385.0
+          ]
+        },
+        {
+          "directionindex": [
+            933.0,
+            381.0
+          ]
+        },
+        {
+          "directionindex": [
+            959.0,
+            384.0
+          ]
+        },
+        {
+          "directionindex": [
+            800.0,
+            392.0
+          ]
+        },
+        {
+          "directionindex": [
+            880.0,
+            392.0
+          ]
+        },
+        {
+          "directionindex": [
+            1039.0,
+            394.0
+          ]
+        },
+        {
+          "directionindex": [
+            725.0,
+            403.0
+          ]
+        },
+        {
+          "directionindex": [
+            910.0,
+            400.0
+          ]
+        },
+        {
+          "directionindex": [
+            944.0,
+            402.0
+          ]
+        },
+        {
+          "directionindex": [
+            757.0,
+            408.0
+          ]
+        },
+        {
+          "directionindex": [
+            990.0,
+            410.0
+          ]
+        },
+        {
+          "directionindex": [
+            383.0,
+            425.0
+          ]
+        },
+        {
+          "directionindex": [
+            992.0,
+            426.0
+          ]
+        },
+        {
+          "directionindex": [
+            1030.0,
+            426.0
+          ]
+        },
+        {
+          "directionindex": [
+            774.0,
+            432.0
+          ]
+        },
+        {
+          "directionindex": [
+            848.0,
+            435.0
+          ]
+        },
+        {
+          "directionindex": [
+            951.0,
+            434.0
+          ]
+        },
+        {
+          "directionindex": [
+            376.0,
+            443.0
+          ]
+        },
+        {
+          "directionindex": [
+            1248.0,
+            439.0
+          ]
+        },
+        {
+          "directionindex": [
+            1351.0,
+            440.0
+          ]
+        },
+        {
+          "directionindex": [
+            350.0,
+            447.0
+          ]
+        },
+        {
+          "directionindex": [
+            1268.0,
+            451.0
+          ]
+        },
+        {
+          "directionindex": [
+            326.0,
+            459.0
+          ]
+        },
+        {
+          "directionindex": [
+            815.0,
+            462.0
+          ]
+        },
+        {
+          "directionindex": [
+            972.0,
+            457.0
+          ]
+        },
+        {
+          "directionindex": [
+            1302.0,
+            460.0
+          ]
+        },
+        {
+          "directionindex": [
+            773.0,
+            466.0
+          ]
+        },
+        {
+          "directionindex": [
+            1296.0,
+            472.0
+          ]
+        },
+        {
+          "directionindex": [
+            1006.0,
+            485.0
+          ]
+        },
+        {
+          "directionindex": [
+            1262.0,
+            486.0
+          ]
+        },
+        {
+          "directionindex": [
+            823.0,
+            492.0
+          ]
+        },
+        {
+          "directionindex": [
+            894.0,
+            493.0
+          ]
+        },
+        {
+          "directionindex": [
+            1302.0,
+            495.0
+          ]
+        },
+        {
+          "directionindex": [
+            854.0,
+            500.0
+          ]
+        },
+        {
+          "directionindex": [
+            912.0,
+            504.0
+          ]
+        },
+        {
+          "directionindex": [
+            983.0,
+            503.0
+          ]
+        },
+        {
+          "directionindex": [
+            1296.0,
+            513.0
+          ]
+        },
+        {
+          "directionindex": [
+            959.0,
+            520.0
+          ]
+        },
+        {
+          "directionindex": [
+            1280.0,
+            516.0
+          ]
+        },
+        {
+          "directionindex": [
+            863.0,
+            524.0
+          ]
+        },
+        {
+          "directionindex": [
+            997.0,
+            529.0
+          ]
+        },
+        {
+          "directionindex": [
+            1205.0,
+            527.0
+          ]
+        },
+        {
+          "directionindex": [
+            1325.0,
+            528.0
+          ]
+        },
+        {
+          "directionindex": [
+            755.0,
+            521.0
+          ]
+        },
+        {
+          "directionindex": [
+            822.0,
+            534.0
+          ]
+        },
+        {
+          "directionindex": [
+            915.0,
+            537.0
+          ]
+        },
+        {
+          "directionindex": [
+            1303.0,
+            536.0
+          ]
+        },
+        {
+          "directionindex": [
+            1231.0,
+            546.0
+          ]
+        },
+        {
+          "directionindex": [
+            1289.0,
+            545.0
+          ]
+        },
+        {
+          "directionindex": [
+            869.0,
+            552.0
+          ]
+        },
+        {
+          "directionindex": [
+            949.0,
+            552.0
+          ]
+        },
+        {
+          "directionindex": [
+            991.0,
+            553.0
+          ]
+        },
+        {
+          "directionindex": [
+            1368.0,
+            562.0
+          ]
+        },
+        {
+          "directionindex": [
+            807.0,
+            568.0
+          ]
+        },
+        {
+          "directionindex": [
+            1181.0,
+            567.0
+          ]
+        },
+        {
+          "directionindex": [
+            1216.0,
+            570.0
+          ]
+        },
+        {
+          "directionindex": [
+            1293.0,
+            569.0
+          ]
+        },
+        {
+          "directionindex": [
+            990.0,
+            577.0
+          ]
+        },
+        {
+          "directionindex": [
+            1328.0,
+            575.0
+          ]
+        },
+        {
+          "directionindex": [
+            1348.0,
+            575.0
+          ]
+        },
+        {
+          "directionindex": [
+            775.0,
+            587.0
+          ]
+        },
+        {
+          "directionindex": [
+            1090.0,
+            585.0
+          ]
+        },
+        {
+          "directionindex": [
+            1155.0,
+            583.0
+          ]
+        },
+        {
+          "directionindex": [
+            1016.0,
+            596.0
+          ]
+        },
+        {
+          "directionindex": [
+            1060.0,
+            594.0
+          ]
+        },
+        {
+          "directionindex": [
+            1132.0,
+            595.0
+          ]
+        },
+        {
+          "directionindex": [
+            1454.0,
+            599.0
+          ]
+        },
+        {
+          "directionindex": [
+            1054.0,
+            611.0
+          ]
+        },
+        {
+          "directionindex": [
+            1079.0,
+            613.0
+          ]
+        },
+        {
+          "directionindex": [
+            1296.0,
+            616.0
+          ]
+        },
+        {
+          "directionindex": [
+            932.0,
+            634.0
+          ]
+        },
+        {
+          "directionindex": [
+            1149.0,
+            643.0
+          ]
+        },
+        {
+          "directionindex": [
+            1210.0,
+            645.0
+          ]
+        },
+        {
+          "directionindex": [
+            1396.0,
+            650.0
+          ]
+        },
+        {
+          "directionindex": [
+            959.0,
+            662.0
+          ]
+        },
+        {
+          "directionindex": [
+            1092.0,
+            662.0
+          ]
+        },
+        {
+          "directionindex": [
+            1082.0,
+            678.0
+          ]
+        },
+        {
+          "directionindex": [
+            1280.0,
+            679.0
+          ]
+        },
+        {
+          "directionindex": [
+            1013.0,
+            707.0
+          ]
+        },
+        {
+          "directionindex": [
+            824.0,
+            734.0
+          ]
+        },
+        {
+          "directionindex": [
+            957.0,
+            735.0
+          ]
+        },
+        {
+          "directionindex": [
+            1271.0,
+            737.0
+          ]
+        },
+        {
+          "directionindex": [
+            1357.0,
+            735.0
+          ]
+        },
+        {
+          "directionindex": [
+            1037.0,
+            754.0
+          ]
+        },
+        {
+          "directionindex": [
+            1732.0,
+            788.0
+          ]
+        },
+        {
+          "directionindex": [
+            1711.0,
+            805.0
+          ]
+        },
+        {
+          "directionindex": [
+            1824.0,
+            818.0
+          ]
+        },
+        {
+          "directionindex": [
+            780.0,
+            816.0
+          ]
+        },
+        {
+          "directionindex": [
+            1366.0,
+            841.0
+          ]
+        },
+        {
+          "directionindex": [
+            336.0,
+            843.0
+          ]
+        },
+        {
+          "directionindex": [
+            1664.0,
+            865.0
+          ]
+        },
+        {
+          "directionindex": [
+            1520.0,
+            874.0
+          ]
+        },
+        {
+          "directionindex": [
+            1597.0,
+            936.0
+          ]
+        },
+        {
+          "directionindex": [
+            96.0,
+            946.0
+          ]
+        },
+        {
+          "directionindex": [
+            207.0,
+            947.0
+          ]
+        },
+        {
+          "directionindex": [
+            1101.0,
+            950.0
+          ]
+        },
+        {
+          "directionindex": [
+            1753.0,
+            976.0
+          ]
+        },
+        {
+          "directionindex": [
+            760.0,
+            1001.0
+          ]
+        },
+        {
+          "directionindex": [
+            1023.0,
+            1010.0
+          ]
+        },
+        {
+          "directionindex": [
+            1587.0,
+            1020.0
+          ]
+        },
+        {
+          "directionindex": [
+            1846.0,
+            1018.0
+          ]
+        },
+        {
+          "directionindex": [
+            913.0,
+            1046.0
+          ]
+        },
+        {
+          "directionindex": [
+            1816.0,
+            1054.0
+          ]
+        },
+        {
+          "directionindex": [
+            606.0,
+            1062.0
+          ]
+        },
+        {
+          "directionindex": [
+            534.0,
+            814.0
+          ]
+        },
+        {
+          "directionindex": [
+            366.0,
+            512.0
+          ]
+        },
+        {
+          "directionindex": [
+            678.0,
+            930.0
+          ]
+        },
+        {
+          "directionindex": [
+            900.0,
+            814.0
+          ]
+        },
+        {
+          "directionindex": [
+            958.0,
+            798.0
+          ]
+        },
+        {
+          "directionindex": [
+            894.0,
+            722.0
+          ]
+        },
+        {
+          "directionindex": [
+            872.0,
+            694.0
+          ]
+        },
+        {
+          "directionindex": [
+            1532.0,
+            916.0
+          ]
+        },
+        {
+          "directionindex": [
+            1576.0,
+            898.0
+          ]
+        },
+        {
+          "directionindex": [
+            1476.0,
+            640.0
+          ]
+        },
+        {
+          "directionindex": [
+            728.0,
+            556.0
+          ]
+        },
+        {
+          "directionindex": [
+            720.0,
+            518.0
+          ]
+        },
+        {
+          "directionindex": [
+            1196.0,
+            732.0
+          ]
+        },
+        {
+          "directionindex": [
+            1216.0,
+            706.0
+          ]
+        },
+        {
+          "directionindex": [
+            1294.0,
+            684.0
+          ]
+        },
+        {
+          "directionindex": [
+            1422.0,
+            604.0
+          ]
+        },
+        {
+          "directionindex": [
+            1412.0,
+            628.0
+          ]
+        },
+        {
+          "directionindex": [
+            1500.0,
+            770.0
+          ]
+        },
+        {
+          "directionindex": [
+            1494.0,
+            720.0
+          ]
+        }
+      ]
+    }
+  },
+  "location": {
+    "locinfo": "EXCO"
+  }
+}

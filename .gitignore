@@ -1,3 +1,10 @@
+# video
+avi/
+
+# dataset, package
+CrowdCounting-P2PNet/
+sort/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
