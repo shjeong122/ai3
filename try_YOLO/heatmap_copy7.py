@@ -7,42 +7,38 @@ from sort.sort import Sort  # SORT 알고리즘 사용
 model = YOLO("bestyolo.pt")  # 학습된 가중치 파일 경로로 변경
 
 # 영상 파일 로드
-video_path = "../avi/여의도3.mp4"  # 입력 영상 파일 경로
+video_path = "../avi/b.mp4"  # 입력 영상 파일 경로
 cap = cv2.VideoCapture(video_path)
-output_path = "../avi/AI히트맵_SORT_예측3.avi"  # 출력 영상 파일 경로
+output_path = "../avi/b2.avi"  # 출력 영상 파일 경로
 
 # 영상 저장 설정
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-out = cv2.VideoWriter(output_path, fourcc, fps, (frame_width, frame_height))
+output_width, output_height = 800, 500  # 출력 영상 크기
+out = cv2.VideoWriter(output_path, fourcc, fps, (output_width, output_height))
 
 # SORT 초기화
 tracker = Sort()
 
-# 4x4 구역 설정
+# 화면 구역 설정 (4x4)
 grid_rows = 4
 grid_cols = 4
-cell_width = frame_width // grid_cols
-cell_height = frame_height // grid_rows
+cell_width = output_width // grid_cols
+cell_height = output_height // grid_rows
 
 # 이전 프레임의 객체 위치 저장
-previous_positions = {}
-future_zone_counts = []  # 미래 구역 밀집도 추적
-
-# 구역 계산 함수
-def calculate_zone(center_x, center_y):
-    """객체 중심 좌표를 기반으로 구역 계산"""
-    col = center_x // cell_width
-    row = center_y // cell_height
-    return row, col
+previous_positions = {}  # 추가: 이전 객체의 위치를 저장할 딕셔너리
 
 # 영상 처리
 while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
         break
+
+    # 입력 프레임 크기 축소 (800x500)
+    frame = cv2.resize(frame, (800, 500))
 
     # YOLOv8로 객체 탐지
     results = model(frame)
@@ -70,7 +66,8 @@ while cap.isOpened():
         center_x, center_y = (x1 + x2) // 2, (y1 + y2) // 2
 
         # 현재 구역 계산
-        row, col = calculate_zone(center_x, center_y)
+        col = center_x // cell_width
+        row = center_y // cell_height
         if 0 <= row < grid_rows and 0 <= col < grid_cols:
             zone_count[row, col] += 1
 
@@ -82,20 +79,13 @@ while cap.isOpened():
             future_y = center_y + dy * (2 * fps)
 
             # 미래 구역 계산
-            future_row, future_col = calculate_zone(future_x, future_y)
+            future_col = future_x // cell_width
+            future_row = future_y // cell_height
             if 0 <= future_row < grid_rows and 0 <= future_col < grid_cols:
                 predicted_zone_count[future_row, future_col] += 1
 
-            # 이동 방향 화살표 표시
-            cv2.arrowedLine(frame, (prev_x, prev_y), (center_x, center_y), (0, 255, 255), 2)
-
         # 현재 위치를 이전 위치로 업데이트
         previous_positions[track_id] = (center_x, center_y)
-
-        # 바운딩 박스와 ID 표시
-        cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
-        cv2.putText(frame, f"ID: {track_id}", (x1, y1 - 10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
 
     # 밀집 예상 구역 계산
     max_predicted_value = np.max(predicted_zone_count)
@@ -104,23 +94,29 @@ while cap.isOpened():
         max_zone_indices = np.where(predicted_zone_count == max_predicted_value)
         predicted_dense_zone = (max_zone_indices[0][0], max_zone_indices[1][0])
 
-    # 4x4 구역 그리기 및 밀집 예상 구역 표시
+    # 4x4 구역 그리기 및 밀집 예상 구역 강조
     for row in range(grid_rows):
         for col in range(grid_cols):
             top_left = (col * cell_width, row * cell_height)
             bottom_right = ((col + 1) * cell_width, (row + 1) * cell_height)
-            if (row, col) == predicted_dense_zone:
-                color = (0, 0, 255)  # 빨간색: 예상 밀집 구역
+
+            # 모든 구역 얇은 회색 선
+            color = (200, 200, 200)
+            thickness = 1
+
+            # 미래 밀집 예상 구역 강조
+            if predicted_dense_zone and (row, col) == predicted_dense_zone:
+                color = (0, 0, 255)  # 빨간색
                 thickness = 3
-            else:
-                color = (200, 200, 200)  # 회색: 일반 구역
-                thickness = 1
+
+            # 구역 그리기
             cv2.rectangle(frame, top_left, bottom_right, color, thickness)
 
     # 결과 저장 및 출력
     out.write(frame)
-    cv2.imshow("Future Density Prediction (2s Before)", frame)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    cv2.imshow("Future Density Prediction with Grid", frame)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):  # 종료 키
         break
 
 cap.release()
