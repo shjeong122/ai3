@@ -2,14 +2,16 @@ import cv2
 import numpy as np
 from ultralytics import YOLO
 from sort.sort import Sort  # SORT 알고리즘 사용
+from collections import deque
+import time
 
 # YOLOv8 모델 로드 (학습된 가중치 파일 사용)
 model = YOLO("bestyolo.pt")  # 학습된 가중치 파일 경로로 변경
 
 # 영상 파일 로드
-video_path = "../avi/avi2.mp4"  # 입력 영상 파일 경로
+video_path = "../avi/NewProject3.mp4"  # 입력 영상 파일 경로
 cap = cv2.VideoCapture(video_path)
-output_path = "../avi/AI히트맵_SORT_예측3.avi"  # 출력 영상 파일 경로
+output_path = "../avi/AI히트맵_SORT_예측.avi"  # 출력 영상 파일 경로
 
 # 영상 저장 설정
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
@@ -19,7 +21,9 @@ frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 out = cv2.VideoWriter(output_path, fourcc, fps, (frame_width, frame_height))
 
 # SORT 초기화
-tracker = Sort()
+# max_age: 추적이 끊기지 않도록 최대 추적 유지 시간을 증가 (기본값: 1)
+# min_hits: 객체가 추적 상태로 등록되기 위한 최소 연속 감지 횟수
+tracker = Sort(max_age=7, min_hits=2) # 객체 추적 지속성과 신뢰도를 향상
 
 # 4x4 구역 설정
 grid_rows = 5
@@ -29,7 +33,8 @@ cell_height = frame_height // grid_rows
 
 # 이전 프레임의 객체 위치 저장
 previous_positions = {}
-future_zone_counts = []  # 미래 구역 밀집도 추적
+dense_zone_display_time = 1
+dense_zone_history = deque(maxlen=fps * dense_zone_display_time)
 
 # 구역 계산 함수
 def calculate_zone(center_x, center_y):
@@ -45,7 +50,7 @@ while cap.isOpened():
         break
 
     # YOLOv8로 객체 탐지
-    results = model(frame)
+    results = model(frame, conf=0.3)  # 신뢰도 임계값 낮춤
     detections = []
 
     # 탐지된 객체 정보 추출
@@ -97,24 +102,40 @@ while cap.isOpened():
         cv2.putText(frame, f"ID: {track_id}", (x1, y1 - 10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
 
+    # 누락된 객체의 위치 예측
+    for track_id, (prev_x, prev_y) in previous_positions.items():
+        if track_id not in tracks[:, -1]:  # 현재 추적 ID에 포함되지 않은 경우
+            future_x, future_y = prev_x, prev_y
+            cv2.circle(frame, (future_x, future_y), 5, (255, 0, 0), -1)  # 예측 위치 표시
+
     # 밀집 예상 구역 계산
     max_predicted_value = np.max(predicted_zone_count)
     predicted_dense_zone = None
-    if max_predicted_value > 0:
+    if max_predicted_value > 2:
         max_zone_indices = np.where(predicted_zone_count == max_predicted_value)
         predicted_dense_zone = (max_zone_indices[0][0], max_zone_indices[1][0])
+        dense_zone_history.append((predicted_dense_zone, time.time()))
 
     # 4x4 구역 그리기 및 밀집 예상 구역 표시
+    current_time = time.time()
     for row in range(grid_rows):
         for col in range(grid_cols):
             top_left = (col * cell_width, row * cell_height)
             bottom_right = ((col + 1) * cell_width, (row + 1) * cell_height)
-            if (row, col) == predicted_dense_zone:
+
+            # 과거 밀집 예상 구역 확인 및 유지
+            is_dense = any(
+                zone == (row, col) and current_time - timestamp <= dense_zone_display_time
+                for zone, timestamp in dense_zone_history
+            )
+
+            if is_dense:
                 color = (0, 0, 255)  # 빨간색: 예상 밀집 구역
                 thickness = 3
             else:
                 color = (200, 200, 200)  # 회색: 일반 구역
                 thickness = 1
+
             cv2.rectangle(frame, top_left, bottom_right, color, thickness)
 
     # 결과 저장 및 출력

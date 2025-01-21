@@ -7,9 +7,9 @@ from sort.sort import Sort  # SORT 알고리즘 사용
 model = YOLO("bestyolo.pt")  # 학습된 가중치 파일 경로로 변경
 
 # 영상 파일 로드
-video_path = "../avi/avi2.mp4"  # 입력 영상 파일 경로
+video_path = "../avi/NewProject3.mp4"  # 입력 영상 파일 경로
 cap = cv2.VideoCapture(video_path)
-output_path = "../avi/AI히트맵_SORT_예측3.avi"  # 출력 영상 파일 경로
+output_path = "../avi/AI히트맵_SORT_예측.avi"  # 출력 영상 파일 경로
 
 # 영상 저장 설정
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
@@ -21,7 +21,7 @@ out = cv2.VideoWriter(output_path, fourcc, fps, (frame_width, frame_height))
 # SORT 초기화
 tracker = Sort()
 
-# 4x4 구역 설정
+# 5x5 구역 설정
 grid_rows = 5
 grid_cols = 5
 cell_width = frame_width // grid_cols
@@ -100,7 +100,7 @@ while cap.isOpened():
     # 밀집 예상 구역 계산
     max_predicted_value = np.max(predicted_zone_count)
     predicted_dense_zone = None
-    if max_predicted_value > 0:
+    if max_predicted_value > 2:
         max_zone_indices = np.where(predicted_zone_count == max_predicted_value)
         predicted_dense_zone = (max_zone_indices[0][0], max_zone_indices[1][0])
 

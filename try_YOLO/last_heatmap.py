@@ -7,7 +7,7 @@ from sort.sort import Sort  # SORT 알고리즘 사용
 model = YOLO("bestyolo.pt")  # 학습된 가중치 파일 경로로 변경
 
 # 영상 파일 로드
-video_path = "../avi/avi1.mp4"  # 입력 영상 파일 경로
+video_path = "../avi/NewProject3.mp4"  # 입력 영상 파일 경로
 cap = cv2.VideoCapture(video_path)
 output_path = "../avi/b_fixed_zero_objects.avi"  # 출력 영상 파일 경로
 
